@@ -1,0 +1,13 @@
+function konversi(jam,menit,detik : int) --> int
+{mengkonversi jam menit detik ke detik}
+algoritma
+  return jam * 3600 + menit * 60 + detik
+endfunction
+
+program hitung_konversi
+kamus
+  j,m,d : int
+algoritma
+  input(j,m,d)
+  output(konversi(j,m,d))
+endprogram
