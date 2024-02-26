@@ -1,1 +1,19 @@
+function hitung_diskon(total:integer,ismember:boolean) --> integer
+algoritma
+  if total > 100000 and ismember then
+    return total * 90 / 100
+  else if total > 100000 and not ismember then
+    return total * 95 /100
+  else
+    return total
+  endif
+endfunction
 
+program belanja
+kamus
+  total : integer
+  ismember : boolean
+algoritma
+  input(total,ismember)
+  output(hitung_diskon(total,ismember))
+endprogram
