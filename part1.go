@@ -6,6 +6,7 @@ func konversi(jam,menit,detik int) int{
 }
 
 func main(){
-  fmt.Println(konversi(0,3,10))
-  fmt.Println(konversi(1,0,5))
+  var j,m,d int
+  fmt.Scanln(&j,&m,&d)
+  fmt.Println(konversi(j,m,d))
 }
