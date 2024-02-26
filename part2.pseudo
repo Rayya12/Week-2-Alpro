@@ -1,0 +1,19 @@
+function check(a,b,c :integer) --> string
+kamus
+  cek : string
+algoritma
+  if (a+b>c) and (a+c>b) and (b+c>a) then
+    cek <-- "segitiga"
+  else
+    cek <-- "bukan segitiga"
+  endif
+  return cek
+endfunction
+
+program segitiga
+kamus
+  a,b,c : integer
+algoritma
+  input(a,b,c)
+  output(check(a,b,c))
+endprogram
